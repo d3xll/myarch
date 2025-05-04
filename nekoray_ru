@@ -1,0 +1,54 @@
+[{
+    "action": "hijack-dns",
+    "protocol": "dns"
+}
+,{
+    "action": "route",
+    "domain_suffix": [
+        ".ru"
+    ],
+    "outbound": "direct",
+    "rule_set": [
+        "yandex_SITE",
+        "deepseek_SITE",
+        "google-registry_SITE",
+        "steam_SITE",
+        "ru_IP",
+        "category-ru_SITE",
+        "private_SITE"
+    ]
+}
+,{
+    "action": "reject",
+    "rule_set": [
+        "category-ads-all@ads_SITE",
+        "category-ads-all_SITE"
+    ]
+}
+,{
+    "action": "route",
+    "domain": [
+        "grok.com"
+    ],
+    "outbound": "proxy",
+    "rule_set": [
+        "discord_SITE",
+        "youtube_SITE",
+        "google_SITE"
+    ]
+}
+,{
+    "action": "route",
+    "outbound": "proxy",
+    "process_name": [
+        "vesktop"
+    ]
+}
+,{
+    "action": "route",
+    "outbound": "proxy",
+    "process_path": [
+        "/usr/bin/vesktop"
+    ]
+}
+]

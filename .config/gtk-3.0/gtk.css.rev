@@ -1,0 +1,86 @@
+.xfce4-panel.background, #XfcePanelWindow.background {
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 5px;
+}
+
+/* Whisker Menu */
+#whiskermenu-button {
+    background: transparent; /* Тот же фон, что у панели */
+    border: none;
+}
+
+/* Лоток состояния (Status Notifier) */
+#sn-button {
+    background: rgba(50, 50, 50, 0.9);
+    border: none;
+}
+
+/* Убираем фон у всех кнопок, если нужно */
+.xfce4-panel button {
+    background: transparent;
+    border: none;
+}
+
+
+.flat,
+.toggle {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+  padding: 5px;
+  border-b
+}
+.flat:hover,
+.toggle:hover {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+  padding: 5px;
+}
+.flat:checked,
+.toggle:checked {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+  border-bottom: 2px solid white;
+  padding: 5px;
+}
+@import 'colors.css';
+
+
+
+
+/* panel */
+.xfce4-panel {
+	background-color: none;
+}
+
+.xfce4-panel#XfcePanelWindow {
+    border-bottom: 1px solid white;
+}
+
+/* tasklist */
+.xfce4-panel .tasklist .toggle { 
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 11px;
+    padding: 0px 6px;
+}
+
+.xfce4-panel .tasklist .toggle:hover { 
+    font-family: 'JetBrainsMono Nerd Font';
+    padding: 0px 2px;
+}
+
+/* workspace switcher */
+
+.xfce4-panel widget grid button.flat.toggle { 
+    font-family: 'JetBrainsMono Nerd Font'; 
+    font-size: 12px;
+    padding: 0px 8px;
+}
+
+.xfce4-panel widget grid button.flat.toggle:hover { 
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 14px;
+    padding: 0px 8px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}

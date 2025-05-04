@@ -1,0 +1,78 @@
+.xfce4-panel#XfcePanelWindow {
+    border-bottom: 1px solid white;
+}
+
+/* .xfce4-panel {
+    background-color: black;
+} */
+
+/* tasklist */
+.xfce4-panel .tasklist .toggle { 
+    font-family: 'JetBrainsMono Nerd Font';
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    padding: 0px 2px;
+}
+
+.xfce4-panel .tasklist .toggle:hover { 
+    font-family: 'JetBrainsMono Nerd Font';
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 0px 4px;
+}
+
+
+.xfce4-panel .tasklist .toggle:checked { 
+    font-family: 'JetBrainsMono Nerd Font';
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 0px 6px;
+}
+
+
+/* workspace switcher */
+.xfce4-panel widget grid button.flat.toggle { 
+    font-family: 'JetBrainsMono Nerd Font'; 
+    font-size: 12px;
+    padding: 0px 8px;
+}
+
+.xfce4-panel widget grid button.flat.toggle:hover { 
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 14px;
+    padding: 0px 8px;
+    /* border-bottom: 2px solid rgb(255, 255, 255); */
+}
+
+/* open apps */
+#sn-button {
+    padding: 0px 8px;
+}
+
+/* keyboard layout */
+#xkb-5 {
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 12px;
+}
+
+.genmon_plugin {
+	margin: 0px 6px;
+}
+
+/* .genmon_plugin image {
+	margin-right: -3px;
+    color: blue;
+} */
+
+.genmon_plugin label {
+    font-family: 'JetBrainsMono Nerd Font';
+    font-size: 12px;
+}
+
+#genmon-17 label {
+    font-family: 'JetBrainsMono Nerd Font';
+    padding-left: 8px;
+}
+
+@import 'colors.css';

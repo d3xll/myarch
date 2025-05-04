@@ -1,0 +1,79 @@
+[{
+    "action": "hijack-dns",
+    "protocol": "dns"
+}
+,{
+    "action": "route",
+    "domain_keyword": [
+        "yakit"
+    ],
+    "outbound": "direct",
+    "rule_set": [
+        "google-registry_SITE",
+        "ru_IP",
+        "category-ru_SITE",
+        "category-gov-ru_SITE",
+        "category-media-ru_SITE"
+    ]
+}
+,{
+    "action": "reject",
+    "rule_set": [
+        "category-ads-all@ads_SITE",
+        "category-ads-all_SITE",
+        "google-ads_SITE"
+    ]
+}
+,{
+    "action": "route",
+    "domain": [
+        "grok.com",
+        "unityassets4free.com",
+        "www.drawio.com",
+        "wiki.hyprland.org"
+    ],
+    "domain_keyword": [
+        "lolz"
+    ],
+    "domain_suffix": [
+        "discord.gg"
+    ],
+    "ip_cidr": [
+        "66.22.196.0/22",
+        "66.22.216.0/22",
+        "66.22.237.0/24",
+        "66.22.238.0/24",
+        "66.22.241.0/24",
+        "66.22.243.0/24",
+        "66.22.244.0/24",
+        "34.0.192.0/18",
+        "35.207.64.0/18",
+        "35.207.128.0/18",
+        "35.214.128.0/17",
+        "35.217.0.0/18",
+        "35.219.224.0/19"
+    ],
+    "outbound": "proxy",
+    "rule_set": [
+        "openai_SITE",
+        "discord_SITE",
+        "x_SITE",
+        "pixiv_SITE",
+        "deviantart_SITE",
+        "google_SITE",
+        "youtube_SITE",
+        "rutracker_SITE",
+        "unity_SITE"
+    ]
+}
+,{
+    "action": "route",
+    "outbound": "proxy",
+    "process_name": [
+        "vesktop",
+        "discord",
+        "youtube-music",
+        "unityhub"
+    ]
+}
+]
